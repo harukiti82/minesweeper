@@ -20,3 +20,11 @@
 - リポジトリ初期化、`AGENTS.md` / `.agent/`（tasks/types/game-logic/architecture/conventions/design-system）配置
 - GitHub に push（実装担当は Sonnet 前提で仕様書を整備）
 - 次: Phase 1-1 Vite 初期化から Sonnet が着手
+
+## 2026-05-26（Phase 1〜3 実装完了）
+
+- Phase 1: Vite/Tailwind/lucide-react 足場、`src/lib/types.ts` + `src/lib/game.ts`、Vitest 21件全パス
+- 関連コミット: `51c3034` `[機能追加] Phase 1: Vite/Tailwind 足場とゲームロジック実装`
+- Phase 2+3: UI コンポーネント群（Cell/Board/StatusBar/DifficultySelector/GameOverlay）、キーボードショートカット(R/1/2/3)
+- 関連コミット: `ff0c10f` `[機能追加] Phase 2+3: UI コンポーネントと勝敗オーバーレイ実装`
+- 次: Phase 4（任意）— README スクショ追加 or GitHub Pages デプロイ

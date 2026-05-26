@@ -6,38 +6,33 @@
 
 ## 現在の対象
 
-- 何を / どこを: プロジェクト立ち上げ完了、**Phase 1（ゲームロジック実装）から Sonnet が着手予定**
-- ステータス: Phase 0（足場） = 完了。Phase 1 = 未着手
+- 何を / どこを: **Phase 1〜3 完了**、Phase 4（任意）が残り
+- ステータス: Phase 1（ゲームロジック）= 完了 / Phase 2（UI）= 完了 / Phase 3（オーバーレイ・キーボード）= 完了
 - 最終更新: 2026-05-26
 
 ## 直近の観点・指摘
 
-- 実装は **Sonnet が行う前提**で仕様書を書いてある。リテラル解釈を前提に、各タスクには受け入れ条件が付いている
-- UI は**ダークモード固定**（zinc 基調）。Glass Pastel は採用しない
-- 難易度は 3 種固定（Easy/Medium/Hard）、初手保護あり
-- ロジックは `src/lib/` に純粋関数で集約、React 非依存に保つ（テスト容易性のため）
+- `npm run dev` でブラウザ上で実際にゲームが遊べる状態
+- 型チェック（`tsc --noEmit`）とテスト（21件）は全パス
+- Phase 3 のアニメーション（`transition-colors duration-150`、`animate-pulse`）は実装済み
+- Phase 3 の長押し旗（モバイル対応）は未実装（任意）
 
 ## 現フェーズで Read すべき設計書
 
-Phase 1 着手時に必ず Read：
-- `.agent/tasks.md`（フェーズ別タスク・受け入れ条件）
-- `.agent/types.md`（型定義の完全な TS コード）
-- `.agent/game-logic.md`（各関数の仕様と受け入れ条件）
-- `.agent/architecture.md`（依存方向・データフロー）
-- `.agent/conventions.md`（命名・コードスタイル・テスト方針）
-
-Phase 2 着手時に追加で：
-- `.agent/design-system.md`（ダークモード配色トークン）
+Phase 4（任意）着手時：
+- `.agent/tasks.md`（Phase 4 タスク確認）
+- README.md にスクリーンショット追加や GitHub Pages デプロイが対象
 
 ## 未解決・次の一手
 
-- [ ] Phase 1-1: Vite プロジェクト初期化（`npm create vite@latest`）
-- [ ] Phase 1-2: Tailwind 導入
-- [ ] Phase 1-3: 追加依存（lucide-react, vitest, prettier）
-- [ ] Phase 1-4: `src/lib/types.ts` 作成
-- [ ] 以降は tasks.md の順番どおり
+- [ ] Phase 4-1: README.md にスクリーンショット追加（任意）
+- [ ] Phase 4-2: GitHub Pages デプロイ（任意）
+- [ ] Phase 3-3: 長押し旗（モバイル対応・任意、未実装）
 
 ## 関連ファイル / リンク
 
-- GitHub: （初回 push 後に URL を記録）
-- 主要仕様書: `.agent/` 配下すべて
+- GitHub: https://github.com/harukiti82/minesweeper
+- コア型定義: `src/lib/types.ts`
+- ゲームロジック: `src/lib/game.ts`
+- フック: `src/hooks/useGame.ts`
+- コンポーネント: `src/components/`
