@@ -6,27 +6,24 @@
 
 ## 現在の対象
 
-- 何を / どこを: **Phase 1〜3 完了**、Phase 4（任意）が残り
-- ステータス: Phase 1（ゲームロジック）= 完了 / Phase 2（UI）= 完了 / Phase 3（オーバーレイ・キーボード）= 完了
+- 何を / どこを: **Phase 1〜4-2 完了**、残り任意タスクのみ
+- ステータス: Phase 1〜3 = 完了 / Phase 4-2（GitHub Pages）= 完了
 - 最終更新: 2026-05-26
 
 ## 直近の観点・指摘
 
-- `npm run dev` でブラウザ上で実際にゲームが遊べる状態
-- 型チェック（`tsc --noEmit`）とテスト（21件）は全パス
-- Phase 3 のアニメーション（`transition-colors duration-150`、`animate-pulse`）は実装済み
-- Phase 3 の長押し旗（モバイル対応）は未実装（任意）
+- GitHub Pages 公開済み: https://harukiti82.github.io/minesweeper/
+- `vite.config.ts` に `base: '/minesweeper/'` 設定済み
+- `.github/workflows/deploy.yml`: main push → 自動ビルド & デプロイ
+- PR #1 を squash merge 済み（`a7252d0`）
 
 ## 現フェーズで Read すべき設計書
 
-Phase 4（任意）着手時：
-- `.agent/tasks.md`（Phase 4 タスク確認）
-- README.md にスクリーンショット追加や GitHub Pages デプロイが対象
+残タスクは任意のみ。新しい実装着手時は `.agent/tasks.md` を確認。
 
 ## 未解決・次の一手
 
 - [ ] Phase 4-1: README.md にスクリーンショット追加（任意）
-- [ ] Phase 4-2: GitHub Pages デプロイ（任意）
 - [ ] Phase 3-3: 長押し旗（モバイル対応・任意、未実装）
 
 ## 関連ファイル / リンク

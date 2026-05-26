@@ -28,3 +28,10 @@
 - Phase 2+3: UI コンポーネント群（Cell/Board/StatusBar/DifficultySelector/GameOverlay）、キーボードショートカット(R/1/2/3)
 - 関連コミット: `ff0c10f` `[機能追加] Phase 2+3: UI コンポーネントと勝敗オーバーレイ実装`
 - 次: Phase 4（任意）— README スクショ追加 or GitHub Pages デプロイ
+
+## 2026-05-26（Phase 4-2: GitHub Pages デプロイ）
+
+- `vite.config.ts` に `base: '/minesweeper/'` 追加、`.github/workflows/deploy.yml` 作成（CI→Pages自動デプロイ）
+- 関連コミット: `a7252d0` `[機能追加] GitHub Pages デプロイ設定を追加 (#1)` — PR #1 を squash merge
+- 公開 URL: https://harukiti82.github.io/minesweeper/（main push 時に自動更新）
+- 次: 残任意タスク（スクショ追加 / 長押し旗）のみ
