@@ -2,18 +2,17 @@
 
 ダークモードで映える Web 版マインスイーパー。React + Vite + TypeScript + Tailwind CSS。
 
-## 状況
-
-α（実装計画のみ）。Phase 0（足場とドキュメント）が完了、Phase 1 以降の実装は Claude Sonnet が `.agent/` の仕様に従って進める。
+**🎮 プレイ**: https://harukiti82.github.io/minesweeper/
 
 ## 仕様
 
 - 難易度: Easy (9×9 / 10 mines), Medium (16×16 / 40 mines), Hard (30×16 / 99 mines)
 - 初手保護: 最初のクリックセルとその周囲8マスには地雷を配置しない
 - 操作: 左クリック=開く、右クリック=旗
+- キーボード: R でリスタート、1/2/3 で難易度切替
 - UI: ダークモード固定（zinc 基調）
 
-## 動かす（実装完了後）
+## ローカルで動かす
 
 ```bash
 npm install
